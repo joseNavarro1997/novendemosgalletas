@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Grupo Scout Santa Isabel 488</title>
+  <meta name="description" content="Datos de contacto del Grupo Scout Santa Isabel 488.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead__logos">
+      <img src="assets/inicio.webp" alt="Flor de lis Grupo Scout" class="logo">
+    </div>
+    <nav class="nav">
+      <a href="index.html">INICIO</a>
+      <a href="campamentos.html">NUESTROS CAMPAMENTOS</a>
+      <a href="buscamos-campamento.html">BUSCAMOS CAMPAMENTO</a>
+      <a href="documentacion.html">DOCUMENTACIÓN</a>
+      <a href="contacto.html">CONTACTO</a>
+      <a href="blog.html">BLOG</a>
+    </nav>
+  </header>
+
+  <main class="page page--contact-full">
+    <section class="section contact-section">
+      <h1 class="contact-title">¿Quieres apuntar a tus hijos?</h1>
+      <p class="lead contact-intro">
+        No dudes en ponerte en contacto con nosotros mediante la siguiente información de contacto
+        o utiliza el formulario para enviarnos un mensaje.
+      </p>
+
+      <div class="contact-grid">
+        <!-- TODO: sustituye YOUR_FORMSPREE_ID por el ID real de tu formulario en Formspree -->
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xqarrjyd" method="POST">
+          <div class="contact-row">
+            <div class="contact-field">
+              <label for="nombre">Nombre <span class="contact-required">(obligatorio)</span></label>
+              <input id="nombre" name="nombre" type="text" required>
+            </div>
+            <div class="contact-field">
+              <label for="movil">Móvil <span class="contact-required">(obligatorio)</span></label>
+              <input id="movil" name="movil" type="tel" required>
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="email">Correo electrónico <span class="contact-required">(obligatorio)</span></label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="contact-field">
+            <label for="edad-hijo-1">Edad <span class="contact-required">(obligatorio)</span></label>
+            <select id="edad-hijo-1" name="edad-hijo-1" required>
+              <option value="">Seleccionar una opción</option>
+              <option value="5">5 años</option>
+              <option value="6">6 años</option>
+              <option value="7">7 años</option>
+              <option value="8">8 años</option>
+              <option value="9">9 años</option>
+              <option value="10">10 años</option>
+              <option value="11">11 años</option>
+              <option value="12">12 años</option>
+              <option value="13">13 años</option>
+              <option value="14">14 años</option>
+              <option value="15">15 años</option>
+              <option value="16">16 años</option>
+              <option value="17">17 años</option>
+              <option value="18">18 años</option>
+            </select>
+          </div>
+
+          <div class="contact-field">
+            <label for="edad-hijo-2">Edad hijo 2 <span class="contact-optional">(opcional)</span></label>
+            <select id="edad-hijo-2" name="edad-hijo-2">
+              <option value="">Seleccionar una opción</option>
+              <option value="5">5 años</option>
+              <option value="6">6 años</option>
+              <option value="7">7 años</option>
+              <option value="8">8 años</option>
+              <option value="9">9 años</option>
+              <option value="10">10 años</option>
+              <option value="11">11 años</option>
+              <option value="12">12 años</option>
+              <option value="13">13 años</option>
+              <option value="14">14 años</option>
+              <option value="15">15 años</option>
+              <option value="16">16 años</option>
+              <option value="17">17 años</option>
+              <option value="18">18 años</option>
+            </select>
+          </div>
+
+          <div class="contact-field">
+            <label for="edad-hijo-3">Edad hijo 3 <span class="contact-optional">(opcional)</span></label>
+            <select id="edad-hijo-3" name="edad-hijo-3">
+              <option value="">Seleccionar una opción</option>
+              <option value="5">5 años</option>
+              <option value="6">6 años</option>
+              <option value="7">7 años</option>
+              <option value="8">8 años</option>
+              <option value="9">9 años</option>
+              <option value="10">10 años</option>
+              <option value="11">11 años</option>
+              <option value="12">12 años</option>
+              <option value="13">13 años</option>
+              <option value="14">14 años</option>
+              <option value="15">15 años</option>
+              <option value="16">16 años</option>
+              <option value="17">17 años</option>
+              <option value="18">18 años</option>
+            </select>
+          </div>
+
+          <div class="contact-field">
+            <label for="mensaje">¡Añade cualquier inquietud que tengas!</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="button contact-submit">Enviar</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-sidebar">
+          <p>Calle de la Juventud 3, local</p>
+          <p>50016 Zaragoza</p>
+          <p><a href="mailto:santaisabel488@gmail.com">santaisabel488@gmail.com</a></p>
+          <figure class="contact-image-wrapper">
+            <img src="assets/fachada.jpg" alt="Fachada del Grupo Scout Santa Isabel" class="contact-image">
+          </figure>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+
+        <!-- Columna izquierda -->
+        <div class="footer-left">
+            <h2>Santa Isabel 488</h2>
+            <p>Fundado en 1982 en Santa Isabel, Zaragoza.</p>
+        </div>
+
+        <!-- Columna central -->
+        <div class="footer-center">
+            <p>¿Tienes alguna pregunta sobre nuestro grupo o sobre las actividades que realizamos?</p>
+            <p>santaisabel488@gmail.com</p>
+            <p>Calle de la Juventud, 3, local<br>50016, Zaragoza</p>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="footer-right">
+            <img src="assets/logo.png" alt="Logo Santa Isabel 488">
+        </div>
+
+    </div>
+  </footer>
+<script>
+  (function () {
+    const form = document.getElementById('contact-form');
+    const statusEl = document.getElementById('form-status');
+
+    if (!form || !statusEl) return;
+
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      statusEl.textContent = 'Enviando...';
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          statusEl.textContent = 'Mensaje enviado correctamente. ¡Gracias por escribirnos!';
+          form.reset();
+        } else {
+          statusEl.textContent = 'Ha habido un problema al enviar el formulario. Inténtalo de nuevo más tarde.';
+        }
+      } catch (err) {
+        statusEl.textContent = 'No se ha podido contactar con el servidor. Revisa tu conexión e inténtalo de nuevo.';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
+
+
