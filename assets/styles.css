@@ -75,6 +75,29 @@ p {
   background: var(--light);
 }
 
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  width: 28px;
+  height: 22px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-toggle-label span {
+  display: block;
+  height: 3px;
+  background: #111827;
+  border-radius: 999px;
+}
+
 .page {
   width: min(960px, 94vw);
   margin: 0 auto;
@@ -96,6 +119,36 @@ p {
 .page--contact-full {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-height: 160px;
+  }
+
+  .masthead {
+    padding-bottom: 8px;
+    position: relative;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .nav a {
+    padding: 8px 10px;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label + .nav {
+    display: flex;
+  }
 }
 
 
